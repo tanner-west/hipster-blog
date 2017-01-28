@@ -60,13 +60,13 @@
 	}
 
 #feature:hover * span {
-	background-color: yellow;
-	color: black;
+	background-color: #FE085B;
+	//color: black;
 }
 
 #article:hover * span {
-	background-color: yellow;
-	color: black;
+	background-color: #FE085B;
+	//color: black;
 }
 
 #article {
@@ -95,6 +95,20 @@
 	background-size: auto 100%;
 
 }
+
+.subtitleDiv {
+	text-align: left;
+	margin-top: 20px;
+}
+
+.subtitle {
+	font-size: 1.5em;
+	color: #B200BE;
+	background-color: yellow;
+	padding: 8px;
+	font-weight: bold;
+
+}
 .guideContainer {
 	border-top: 1px solid #171110;
 	margin-bottom: 20px;
@@ -116,7 +130,7 @@
 	font-size: 2em;
 	color: white;
 }
-#footerContainer {
+#footerNavContainer {
 	background-color: #171110;
 	height: 200px;
 	margin: 0;
