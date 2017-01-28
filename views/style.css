@@ -30,16 +30,26 @@
 	margin-top: 90px;
 	background-size: auto 100%;
 }
-#featureContainer {
+#featureTitleContainer {
 	width: 50%;
 	position: absolute;
 	top: 15px;
 	left: 15px;
 }
-#featureText {
+#featureText, #articleText {
 	background: rgba(0, 0, 0, 0.5);
 	font-size: 4em;
 	color: white;
+	padding: 5px;
+
+}
+
+
+#articleTitleContainer {
+	width: 50%;
+	position: absolute;
+	bottom: 15px;
+	left: 30px;
 
 }
 
@@ -49,7 +59,68 @@
 	color: white;
 	}
 
-#featureContainer:hover > span {
+#feature:hover * span {
 	background-color: yellow;
 	color: black;
+}
+
+#article:hover * span {
+	background-color: yellow;
+	color: black;
+}
+
+#article {
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+}
+#articleContent1 {
+	background-image: url(hipsterMan.jpg);
+	height: 300px;
+	background-position: center;
+	background-size: auto 100%;
+
+}
+#articleContent2 {
+	background-image: url(darkLady.jpg);
+	height: 300px;
+	background-position: center;
+	background-size: auto 100%;
+
+}
+#articleContent3 {
+	background-image: url(hipsterDude.jpg);
+	height: 300px;
+	background-position: center;
+	background-size: auto 100%;
+
+}
+.guideContainer {
+	border-top: 1px solid #171110;
+	margin-bottom: 20px;
+}
+
+.guideImg {
+	height: 100%;
+	margin: 10px;
+}
+.guideSnippet {
+	margin: 10px;
+	font-size: 1.5em;
+}
+#footerNav {
+	list-style-type: none;
+	margin-top: 15px;
+}
+#footerNav > li {
+	font-size: 2em;
+	color: white;
+}
+#footerContainer {
+	background-color: #171110;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	margin-right: -30px;
+	margin-left: -30px;
 }
