@@ -1,0 +1,43 @@
+doctype html
+html
+head
+ script(src='https://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
+ meta(name='viewport', content='width=device-width, initial-scale=1')
+
+
+ link(href='https://fonts.googleapis.com/css?family=Lora|Raleway', rel='stylesheet')
+
+ style
+  include bootstrap.css
+  include style.css
+
+
+body
+ .row
+  #side.col-md-3
+   #side-container.col-md-12
+    h1#name.text-center Learn Your Stuff
+    p#title.text-center whorepsu
+    ul#navi.text-center
+     li Blog
+     li About
+     li Data
+     li Contact
+  #main.col-md-9
+   h2 About Who Reps U
+   #names.col-md-12
+script.
+ $("#side").css("height", $(window).height());
+ $(window).resize(function(){
+   $("#side").css("height", $(window).height());
+   $("#side-container").css("padding-top", $("#side").height()/4);
+ })
+ $("#side-container").css("padding-top", $("#side").height()/4);
+
+script(src='govdata.js')
+script.
+ var names = [];
+ for (i=0; i<govdata.length; i++){
+ names.push(govdata[i].name.official_full + "</br>");
+ }
+ $("#names").html(names);

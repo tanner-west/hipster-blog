@@ -1,0 +1,55 @@
+#topNavDiv {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 75px;
+	background-color: white;
+	z-index: 100;
+	}
+#title {
+	font-family: 'Shrikhand';
+}	
+
+#navLinks > a {
+}
+#navLinks > li, #search > li {
+	display: inline-block;
+	text-align: right;
+	width: 33%;
+	margin: auto;
+	font-size: 1.5em;
+	margin-top: 25px;
+
+}
+
+
+#feature {
+	background-image: url(https://images.unsplash.com/photo-1478118330274-ff72cf1161a7?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
+	height: 750px;
+	background-position: center;
+	margin-top: 90px;
+	background-size: auto 100%;
+}
+#featureContainer {
+	width: 50%;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+#featureText {
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 4em;
+	color: white;
+
+}
+
+#byline, #date {
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 2em;
+	color: white;
+	}
+
+#featureContainer:hover > span {
+	background-color: yellow;
+	color: black;
+}
