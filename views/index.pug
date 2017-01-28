@@ -9,8 +9,19 @@ link(href='https://fonts.googleapis.com/css?family=Cormorant|Open+Sans|Shrikhand
 style
   include bootstrap.css
   include style.css
-
-
+-var authenticated = [{"title": "Should you wear shoes in 2017?", "author": "Shoeless Hipster", "tag": "WTF", "img": "shoes.jpg", "content":"You've likely been wearing shoes for most of your life and never questioned whether you should continue to do so. Now, one hipster with cold feed is challenging the way we think about footwear."}, {"title": "How to choose the right fashion accessories for your dog", "author": "Hipster Fashionista", "tag": "WOOF WOOF", "img": "dog.jpg", "content":"If you think doggie accessories are limited to stupid little sweaters and ugly tutus, think again. Here we offer tips for making sure your dog dresses as cool as you do."}, {"title": "Choosing a couch that you won't be ashamed to let your friends sleep on", "author": "Hipster Fashionista", "tag": "KICKIN IT",  "img": "couch.jpg", "content":"Do the words \'Hey, bro, can I crash at your place tonight\' cause you to break out into a cold sweat because you're embarrassed over your crappy old couch? Learn how to avoid sofa shame with this guide to buying a couch that your friends will be happy to sleep on."}, {"title": "Tennessee hipsters eat more lard than other southern hipsters", "author": "Hipster Fashionista", "tag": "TN!", "img":"bread.jpg"}, {"title": "College hipsters reject label \'cool\', prefer the term \'keen\'", "author": "4th Year Hipster", "tag": "HIGHER ED", "img": "study.jpg", "content":"A seven-year study conducted by Vanderbilt University reveals that college hipsters prefer to refer to themselves as \'keen\' rather than \'cool\'when describing their sense of fashion, social justice, and sense of community."} ]
+mixin articles(articles)
+ each article in articles
+  div.row.guideContainer
+     div.col-md-12.subtitleDiv
+      span.subtitle= article.tag
+     div.col-md-12
+      h2= article.title
+     div.col-md-12
+      div.col-md-4
+        img(src=article.img).img-responsive.guideImg
+      div.col-md-8
+        p.guideSnippet= article.content
 body
  div.container
   div.row
@@ -54,36 +65,8 @@ body
       div#articleContent3
        div#articleTitleContainer 
         span#articleText much cooler
-  div.row.guideContainer
-     div.col-md-12.subtitleDiv
-      span.subtitle KICKIN' IT
-     div.col-md-12
-      h2 Choosing a couch you'll be proud to let your friends sleep on 
-     div.col-md-12
-      div.col-md-4
-        img(src='couch.jpg').img-responsive.guideImg
-      div.col-md-8
-        p.guideSnippet Your dog is your best friend, so he or she deserves to look good beside you. I decided i would try to start dressing like my dog when i watched the scene in 101 Dalmations where the characters watch a parade of dog/owner pairs in the park that resemble each other.
-  div.row.guideContainer
-     div.col-md-12.subtitleDiv
-      span.subtitle WOOF WOOF
-     div.col-md-12
-      h2 Your guide to choosing accessories to match your dog 
-     div.col-md-12
-      div.col-md-4
-        img(src='dog.jpg').img-responsive.guideImg
-      div.col-md-8
-        p.guideSnippet Your dog is your best friend, so he or she deserves to look good beside you. I decided i would try to start dressing like my dog when i watched the scene in 101 Dalmations where the characters watch a parade of dog/owner pairs in the park that resemble each other.
-  div.row.guideContainer
-     div.col-md-12.subtitleDiv
-      span.subtitle WTF
-     div.col-md-12
-      h2 Do we really need shoes?
-     div.col-md-12
-      div.col-md-4
-        img(src='shoes.jpg').img-responsive.guideImg
-      div.col-md-8
-        p.guideSnippet Your dog is your best friend, so he or she deserves to look good beside you. I decided i would try to start dressing like my dog when i watched the scene in 101 Dalmations where the characters watch a parade of dog/owner pairs in the park that resemble each other.
+
+  +articles(authenticated)  
   div.row#footerNavContainer            
     div.col-md-4
       ul#footerNav
