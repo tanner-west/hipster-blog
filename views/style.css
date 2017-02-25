@@ -1,24 +1,37 @@
-#topNavDiv {
+#top-nav-div {
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	height: 75px;
 	background-color: white;
 	z-index: 100;
 	}
 #title {
 	font-family: 'Shrikhand';
+	display: inline-block;
+	vertical-align: center;
+	margin: 10px;
 }	
-
-#navLinks > a {
+#nav-container {
+	display: inline-block;
+	text-align: center;
+	width: 75%;
+	right: 0px;
 }
-#navLinks > li, #search > li {
+#nav-links-ul {
+	top: 50%;
+	padding: 0;
+	display: inline;
+}
+
+#nav-links-ul > a {
+}
+#nav-links-ul > li {
 	display: inline-block;
 	text-align: right;
-	width: 33%;
 	margin: auto;
 	font-size: 1.5em;
-	margin-top: 25px;
+	width: 25%;
+	margin: auto;
 
 }
 
@@ -27,16 +40,16 @@
 	background-image: url(https://images.unsplash.com/photo-1478118330274-ff72cf1161a7?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
 	height: 750px;
 	background-position: center;
-	margin-top: 90px;
+	margin-top: 60px;
 	background-size: auto 100%;
 }
-#featureTitleContainer {
+#feature-title-container {
 	width: 50%;
 	position: absolute;
 	top: 15px;
 	left: 15px;
 }
-#featureText, #articleText {
+#feature-text, #article-text {
 	background: rgba(0, 0, 0, 0.5);
 	font-size: 4em;
 	color: white;
@@ -44,7 +57,7 @@
 }
 
 
-#articleTitleContainer {
+#article-title-container {
 	width: 50%;
 	position: absolute;
 	bottom: 15px;
@@ -73,21 +86,21 @@
 	margin-bottom: 30px;
 
 }
-#articleContent1 {
+#article-content1 {
 	background-image: url(hipsterMan.jpg);
 	height: 300px;
 	background-position: center;
 	background-size: auto 100%;
 
 }
-#articleContent2 {
+#article-content2 {
 	background-image: url(darkLady.jpg);
 	height: 300px;
 	background-position: center;
 	background-size: auto 100%;
 
 }
-#articleContent3 {
+#article-content3 {
 	background-image: url(hipsterDude.jpg);
 	height: 300px;
 	background-position: center;
@@ -95,7 +108,7 @@
 
 }
 
-.subtitleDiv {
+.subtitle-div {
 	text-align: left;
 	margin-top: 20px;
 }
@@ -108,28 +121,28 @@
 	font-weight: bold;
 
 }
-.guideContainer {
+.guide-container {
 	border-top: 0.5px solid lightgray;
 	margin-bottom: 20px;
 }
 
-.guideImg {
+.guide-img {
 	height: 100%;
 	margin: 10px;
 }
-.guideSnippet {
+.guide-snippet {
 	margin: 10px;
 	font-size: 1.5em;
 }
-#footerNav {
+#footer-nav {
 	list-style-type: none;
 	margin-top: 15px;
 }
-#footerNav > li {
+#footer-nav > li {
 	font-size: 2em;
 	color: white;
 }
-#footerNavContainer {
+#footer-nav-container {
 	background-color: #171110;
 	height: 200px;
 	margin: 0;
