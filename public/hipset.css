@@ -39,8 +39,33 @@ a, a:hover, a:visited {
 	margin: auto;
 
 }
+#guide-container {
+width: 90%;
+overflow-x: hidden;
+overflow-Y: hidden;
+height: 350px;
+white-space: nowrap;
+margin: 0;
+float: left;
+}
+
+#hover, #hover2 {
+	height: 350px;
+	width: 5%;
+	float: left;
+
+}
 
 
+#guide-container * span {
+	white-space: normal;
+
+}
+
+
+#guide-wrapper {
+	width: 100%;
+}
 #feature {
 	background-image: url(https://images.unsplash.com/photo-1478118330274-ff72cf1161a7?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
 	height: 750px;
@@ -54,7 +79,7 @@ a, a:hover, a:visited {
 	top: 15px;
 	left: 15px;
 }
-#feature-text, #article-text {
+#feature-text, #guide-text {
 	background: rgba(0, 0, 0, 0.5);
 	font-size: 4em;
 	color: white;
@@ -62,7 +87,7 @@ a, a:hover, a:visited {
 }
 
 
-#article-content-container {
+#guide-content-container {
 	width: 50%;
 	position: absolute;
 	bottom: 15px;
@@ -81,37 +106,24 @@ a, a:hover, a:visited {
 	//color: black;
 }
 
-#article:hover * span {
+#guide:hover * span {
 	background-color: #FE085B;
 	//color: black;
 }
 
-#article {
-	margin-top: 30px;
-	margin-bottom: 30px;
-
-}
-#article-content1 {
-	background-image: url(hipsterMan.jpg);
-	height: 300px;
+#guide {
+	vertical-align: middle;
+	display: inline-block;
+	width: 35%;
+	margin: 10px;
+	height: 100%;
+	background-size: cover;
 	background-position: center;
-	background-size: auto 100%;
+	position: relative;
+
 
 }
-#article-content2 {
-	background-image: url(darkLady.jpg);
-	height: 300px;
-	background-position: center;
-	background-size: auto 100%;
 
-}
-#article-content3 {
-	background-image: url(hipsterDude.jpg);
-	height: 300px;
-	background-position: center;
-	background-size: auto 100%;
-
-}
 
 .subtitle-div {
 	text-align: left;
@@ -131,7 +143,7 @@ a, a:hover, a:visited {
 	margin-bottom: 20px;
 }
 
-.guide-container:hover {
+.article-container:hover {
 	//transform: translate(5px, -5px);
 	-moz-box-shadow:    0px 1px 3px 1px #ccc;
     -webkit-box-shadow: 0px 1px 3px 1px #ccc;
