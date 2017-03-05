@@ -2,13 +2,16 @@ a, a:hover, a:visited {
 	color: black;
 	text-decoration: none;
 }
-
+.container {
+	width: 100vw;
+ }
 #top-nav-div {
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	background-color: white;
 	z-index: 100;
+	width: 100%;
 	}
 #title {
 	font-family: 'Shrikhand';
@@ -16,27 +19,25 @@ a, a:hover, a:visited {
 	vertical-align: center;
 	margin: 10px;
 }	
-#nav-container {
-	display: inline-block;
-	text-align: center;
-	width: 75%;
-	right: 0px;
-}
+
 #nav-links-ul {
 	top: 50%;
 	padding: 0;
-	display: inline;
+	display: inline-block;
+	width: 80%;
+	left: 20%;
 }
 
 #nav-links-ul > a {
 }
 #nav-links-ul > li {
 	display: inline-block;
-	text-align: right;
+	text-align: center;
 	margin: auto;
 	font-size: 1.5em;
-	width: 25%;
 	margin: auto;
+	width: 25%;
+
 
 }
 #guide-container {
@@ -68,9 +69,9 @@ float: left;
 }
 #feature {
 	background-image: url(https://images.unsplash.com/photo-1478118330274-ff72cf1161a7?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
-	height: 750px;
+	height: 100vh;
+	margin-top: 55px;
 	background-position: center;
-	margin-top: 60px;
 	background-size: auto 100%;
 }
 #feature-title-container {
@@ -152,7 +153,6 @@ float: left;
 
 .guide-img {
 	height: 100%;
-	margin: 10px;
 }
 .guide-snippet {
 	margin: 10px;
@@ -173,4 +173,27 @@ float: left;
 	padding: 0;
 	margin-right: -30px;
 	margin-left: -30px;
+}
+
+@media (max-width: 480px) {
+	h1, h2, h3, span {
+		font-size: 2em !important;
+	}
+
+	p {
+		font-size: 1.5em !important;
+	}
+
+	li {
+		font-size: .75em !important;
+	}
+	#guide {
+		width: 90%;
+	}
+	#nav-links-ul {
+		display: none;
+	}
+	#guide-container {
+		overflow-x: scroll;
+		overflow-Y: hidden;
 }
