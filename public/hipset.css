@@ -209,7 +209,7 @@ position: relative;
 	}
 
 	p {
-		font-size: 1.5em !important;
+		font-size: 1.25em !important;
 	}
 
 	li {
@@ -227,5 +227,8 @@ position: relative;
 }
 #hover, #hover2 {
 	display: none;
+	}
+	.article-container{
+		margin: 0px;
 	}
 }
