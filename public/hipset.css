@@ -221,6 +221,9 @@ position: relative;
 	#nav-links-ul {
 		display: none;
 	}
+	#guide-text {
+		font-size: 4em !important;
+	}
 	#guide-container {
 		overflow-x: scroll;
 		overflow-Y: hidden;
@@ -230,5 +233,8 @@ position: relative;
 	}
 	.article-container{
 		margin: 0px;
+	}
+	#feature {
+		background-position: center;
 	}
 }
