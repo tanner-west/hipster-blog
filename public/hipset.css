@@ -81,7 +81,7 @@ position: relative;
 }
 
 
-#guide-container * span {
+#guide-container span {
 	white-space: normal;
 
 }
@@ -124,12 +124,12 @@ position: relative;
 	color: white;
 	}
 
-#feature:hover * span {
+#feature:hover span {
 	background-color: #FE085B;
 	//color: black;
 }
 
-#guide:hover * span {
+#guide:hover span {
 	background-color: #FE085B;
 	//color: black;
 }
